@@ -10,7 +10,9 @@ module.exports = {
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
-        ecmaFeatures: { jsx: true },
+        ecmaFeatures: {
+            jsx: true,
+        },
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
@@ -19,12 +21,10 @@ module.exports = {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
         indent: [2, 4],
-        'linebreak-style': 'off',
         'react/jsx-filename-extension': [
             2,
             { extensions: ['.js', '.jsx', '.tsx'] },
         ],
-        'jsx-quotes': [2, 'prefer-single'],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
         'no-unused-vars': 'warn',
@@ -36,8 +36,13 @@ module.exports = {
         'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
-        'object-curly-newline': 'off',
         'i18next/no-literal-string': ['error', { markupOnly: true }],
+        'jsx-quotes': [2, 'prefer-single'],
+        'no-multiple-empty-lines': 'off',
+        'implicit-arrow-linebreak': 'off',
+        'operator-linebreak': 'off',
     },
-    globals: { __IS_DEV__: true },
+    globals: {
+        __IS_DEV__: true,
+    },
 };
