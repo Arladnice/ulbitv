@@ -41,6 +41,8 @@ module.exports = {
         'jsx-quotes': [2, 'prefer-single'],
         'implicit-arrow-linebreak': 'off',
         'operator-linebreak': 'off',
+        'max-len': ['error', { ignoreComments: true, code: 100 }],
+        'linebreak-style': 0,
     },
     globals: {
         __IS_DEV__: true,
