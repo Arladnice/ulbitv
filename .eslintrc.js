@@ -44,8 +44,10 @@ module.exports = {
         'jsx-quotes': [2, 'prefer-single'],
         'implicit-arrow-linebreak': 'off',
         'operator-linebreak': 'off',
-        'max-len': ['error', { ignoreComments: true, code: 100 }],
+        'max-len': ['error', { ignoreComments: true, code: 120 }],
         'linebreak-style': 0,
+        'react/jsx-wrap-multilines': 'off',
+        'object-curly-newline': 'off',
     },
     globals: {
         __IS_DEV__: true,
