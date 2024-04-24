@@ -48,6 +48,7 @@ module.exports = {
         'linebreak-style': 0,
         'react/jsx-wrap-multilines': 'off',
         'object-curly-newline': 'off',
+        'wrap-iife': 'off',
     },
     globals: {
         __IS_DEV__: true,
