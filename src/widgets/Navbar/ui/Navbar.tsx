@@ -28,9 +28,9 @@ export const Navbar = ({ className }: NavbarProps) => {
                 {t('Войти')}
             </Button>
             <Modal isOpen={isAuthModalOpen} onClose={onToggleModal}>
-                {/* eslint-disable-next-line */}
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-                a iusto quidem!
+                {t(
+                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnia iusto quidem!',
+                )}
             </Modal>
         </div>
     );
