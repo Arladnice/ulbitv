@@ -11,10 +11,14 @@
     outline: none;
 }
 
-.outline {
+.outline, .outlineInverted {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
     background: none;
+}
+
+.outlineInverted {
+    color: var(--inverted-primary-color);
 }
 
 .background {
