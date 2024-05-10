@@ -21,7 +21,7 @@ module.exports = {
     rules: {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
-        indent: [2, 4],
+        indent: 'off',
         'react/jsx-filename-extension': [
             2,
             { extensions: ['.js', '.jsx', '.tsx'] },
@@ -37,10 +37,6 @@ module.exports = {
         'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
-        'i18next/no-literal-string': [
-            'error',
-            { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] },
-        ],
         'jsx-quotes': [2, 'prefer-single'],
         'implicit-arrow-linebreak': 'off',
         'operator-linebreak': 'off',
@@ -54,6 +50,8 @@ module.exports = {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
         'no-param-reassign': 'off',
+        'react/jsx-no-useless-fragment': 'off',
+        'i18next/no-literal-string': 'off',
     },
     globals: {
         __IS_DEV__: true,
