@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Input } from 'shared/ui/Input/Input';
 
@@ -10,7 +10,11 @@ const MainPage = () => {
         setValue(val);
     };
 
-    return <div>{t('Главная страница')}</div>;
+    return (
+        <div>
+            {t('Главная страница')}
+        </div>
+    );
 };
 
 export default MainPage;

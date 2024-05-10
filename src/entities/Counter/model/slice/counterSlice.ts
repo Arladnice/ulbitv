@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { RootState } from 'app/providers/StoreProvider/config/store';
 import { CounterSchema } from '../types/counterSchema';
 
 const initialState: CounterSchema = {
@@ -19,7 +18,6 @@ export const counterSlice = createSlice({
     },
 });
 
-export const { actions: counterActions, reducer: counterReducer } =
-    counterSlice;
-
-export default counterSlice.reducer;
+// Action creators are generated for each case reducer function
+export const { actions: counterActions } = counterSlice;
+export const { reducer: counterReducer } = counterSlice;
